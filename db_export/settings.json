@@ -1,0 +1,66 @@
+[
+  {
+    "_id": "69da658da2113c8b4be8705c",
+    "institutionName": "EduLearn University",
+    "institutionEmail": "admin@edulearn.edu",
+    "institutionPhone": "",
+    "logoUrl": "",
+    "currentAcademicYear": "2024-2025",
+    "currentSemester": 4,
+    "maxStudentsPerCourse": 60,
+    "security": {
+      "disableCopyPaste": true,
+      "detectTabSwitch": true,
+      "requireFullscreen": true,
+      "blockRightClick": true,
+      "detectDevTools": true,
+      "lockOnViolation": false,
+      "requireWebcam": false,
+      "screenWatermark": true,
+      "maxViolations": 5
+    },
+    "smtpHost": "",
+    "smtpPort": 587,
+    "notificationEmail": "",
+    "gradingScale": {
+      "Aplus": {
+        "grade": "A+",
+        "min": 90,
+        "max": 100
+      },
+      "A": {
+        "grade": "A",
+        "min": 80,
+        "max": 89
+      },
+      "Bplus": {
+        "grade": "B+",
+        "min": 70,
+        "max": 79
+      },
+      "B": {
+        "grade": "B",
+        "min": 60,
+        "max": 69
+      },
+      "C": {
+        "grade": "C",
+        "min": 50,
+        "max": 59
+      },
+      "D": {
+        "grade": "D",
+        "min": 40,
+        "max": 49
+      },
+      "F": {
+        "grade": "F",
+        "min": 0,
+        "max": 39
+      }
+    },
+    "createdAt": "2026-04-11T15:15:25.078Z",
+    "updatedAt": "2026-04-11T17:33:32.254Z",
+    "__v": 0
+  }
+]

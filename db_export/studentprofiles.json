@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "69da6590a2113c8b4be8706a",
+    "user": "69da658fa2113c8b4be87069",
+    "rollNumber": "CS21001",
+    "batch": "2021-2025",
+    "currentSemester": 4,
+    "gpa": 8.5,
+    "attendancePercentage": 92,
+    "enrolledCourses": [
+      "69da6593a2113c8b4be8707a",
+      "69da6593a2113c8b4be8707b",
+      "69da6593a2113c8b4be8707c"
+    ],
+    "academicHistory": [],
+    "createdAt": "2026-04-11T15:15:28.108Z",
+    "updatedAt": "2026-04-11T15:15:31.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69da6590a2113c8b4be8706c",
+    "user": "69da6590a2113c8b4be8706b",
+    "rollNumber": "CS21002",
+    "batch": "2021-2025",
+    "currentSemester": 4,
+    "gpa": 8.5,
+    "attendancePercentage": 92,
+    "enrolledCourses": [
+      "69da6593a2113c8b4be8707a",
+      "69da6593a2113c8b4be8707b",
+      "69da6593a2113c8b4be8707c"
+    ],
+    "academicHistory": [],
+    "createdAt": "2026-04-11T15:15:28.492Z",
+    "updatedAt": "2026-04-11T15:15:31.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69da6590a2113c8b4be8706e",
+    "user": "69da6590a2113c8b4be8706d",
+    "rollNumber": "CS21003",
+    "batch": "2021-2025",
+    "currentSemester": 4,
+    "gpa": 8.5,
+    "attendancePercentage": 92,
+    "enrolledCourses": [
+      "69da6593a2113c8b4be8707a",
+      "69da6593a2113c8b4be8707b",
+      "69da6593a2113c8b4be8707c"
+    ],
+    "academicHistory": [],
+    "createdAt": "2026-04-11T15:15:28.884Z",
+    "updatedAt": "2026-04-11T15:15:31.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69da6591a2113c8b4be87070",
+    "user": "69da6590a2113c8b4be8706f",
+    "rollNumber": "CS21004",
+    "batch": "2021-2025",
+    "currentSemester": 4,
+    "gpa": 8.5,
+    "attendancePercentage": 92,
+    "enrolledCourses": [
+      "69da6593a2113c8b4be8707a",
+      "69da6593a2113c8b4be8707b",
+      "69da6593a2113c8b4be8707c"
+    ],
+    "academicHistory": [],
+    "createdAt": "2026-04-11T15:15:29.299Z",
+    "updatedAt": "2026-04-11T15:15:31.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69da6591a2113c8b4be87072",
+    "user": "69da6591a2113c8b4be87071",
+    "rollNumber": "CS21005",
+    "batch": "2021-2025",
+    "currentSemester": 4,
+    "gpa": 8.5,
+    "attendancePercentage": 92,
+    "enrolledCourses": [
+      "69da6593a2113c8b4be8707a",
+      "69da6593a2113c8b4be8707b",
+      "69da6593a2113c8b4be8707c"
+    ],
+    "academicHistory": [],
+    "createdAt": "2026-04-11T15:15:29.651Z",
+    "updatedAt": "2026-04-11T15:15:31.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69da6591a2113c8b4be87074",
+    "user": "69da6591a2113c8b4be87073",
+    "rollNumber": "CS21006",
+    "batch": "2021-2025",
+    "currentSemester": 4,
+    "gpa": 8.5,
+    "attendancePercentage": 92,
+    "enrolledCourses": [
+      "69da6593a2113c8b4be8707a",
+      "69da6593a2113c8b4be8707b",
+      "69da6593a2113c8b4be8707c"
+    ],
+    "academicHistory": [],
+    "createdAt": "2026-04-11T15:15:29.990Z",
+    "updatedAt": "2026-04-11T15:15:31.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69da6592a2113c8b4be87076",
+    "user": "69da6591a2113c8b4be87075",
+    "rollNumber": "CS21007",
+    "batch": "2021-2025",
+    "currentSemester": 4,
+    "gpa": 8.5,
+    "attendancePercentage": 92,
+    "enrolledCourses": [
+      "69da6593a2113c8b4be8707a",
+      "69da6593a2113c8b4be8707b",
+      "69da6593a2113c8b4be8707c"
+    ],
+    "academicHistory": [],
+    "createdAt": "2026-04-11T15:15:30.507Z",
+    "updatedAt": "2026-04-11T15:15:31.209Z",
+    "__v": 0
+  },
+  {
+    "_id": "69da6592a2113c8b4be87078",
+    "user": "69da6592a2113c8b4be87077",
+    "rollNumber": "CS21008",
+    "batch": "2021-2025",
+    "currentSemester": 4,
+    "gpa": 8.5,
+    "attendancePercentage": 92,
+    "enrolledCourses": [
+      "69da6593a2113c8b4be8707a",
+      "69da6593a2113c8b4be8707b",
+      "69da6593a2113c8b4be8707c"
+    ],
+    "academicHistory": [],
+    "createdAt": "2026-04-11T15:15:30.856Z",
+    "updatedAt": "2026-04-11T15:15:31.209Z",
+    "__v": 0
+  }
+]

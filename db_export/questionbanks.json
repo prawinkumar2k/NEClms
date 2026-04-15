@@ -1,0 +1,76 @@
+[
+  {
+    "_id": "69ddf17876afcc23497c0831",
+    "type": "mcq",
+    "questionText": "What is the primary purpose of React Virtual DOM?",
+    "options": {
+      "A": "Directly manipulate DOM",
+      "B": "Improve performance by batching updates",
+      "C": "Store data permanently",
+      "D": "Style components"
+    },
+    "correctAnswer": "B",
+    "answerType": "short",
+    "allowedExtensions": [],
+    "marks": 1,
+    "difficulty": "easy",
+    "topic": "Basics",
+    "course": "69dde993f1b8cf2b39d36e0e",
+    "department": "69da658da2113c8b4be8705d",
+    "createdBy": "69dccf09a3ea7558adf7b77b",
+    "tags": [],
+    "usageCount": 0,
+    "isActive": true,
+    "testCases": [],
+    "__v": 0,
+    "createdAt": "2026-04-14T07:49:12.276Z",
+    "updatedAt": "2026-04-14T07:49:12.276Z"
+  },
+  {
+    "_id": "69ddf17876afcc23497c0832",
+    "type": "coding",
+    "questionText": "Write a function to reverse a string in JavaScript.",
+    "language": "javascript",
+    "testCases": [
+      {
+        "input": "'hello'",
+        "output": "'olleh'",
+        "_id": "69ddf17876afcc23497c0833"
+      }
+    ],
+    "answerType": "short",
+    "allowedExtensions": [],
+    "marks": 1,
+    "difficulty": "medium",
+    "topic": "Strings",
+    "course": "69dde993f1b8cf2b39d36e0e",
+    "department": "69da658da2113c8b4be8705d",
+    "createdBy": "69dccf09a3ea7558adf7b77b",
+    "tags": [],
+    "usageCount": 0,
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-14T07:49:12.276Z",
+    "updatedAt": "2026-04-14T07:49:12.276Z"
+  },
+  {
+    "_id": "69ddf17876afcc23497c0834",
+    "type": "text",
+    "questionText": "Explain Middleware in Express.js.",
+    "answerType": "long",
+    "allowedExtensions": [],
+    "marks": 1,
+    "difficulty": "hard",
+    "topic": "Backend",
+    "course": "69dde993f1b8cf2b39d36e0e",
+    "department": "69da658da2113c8b4be8705d",
+    "createdBy": "69dccf09a3ea7558adf7b77b",
+    "tags": [],
+    "usageCount": 0,
+    "isActive": true,
+    "testCases": [],
+    "__v": 0,
+    "createdAt": "2026-04-14T07:49:12.276Z",
+    "updatedAt": "2026-04-14T07:49:12.276Z"
+  }
+]

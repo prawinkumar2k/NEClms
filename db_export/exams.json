@@ -1,0 +1,153 @@
+[
+  {
+    "_id": "69dde9abfa9e54ef2f88529b",
+    "title": "MERN Midterm Exam",
+    "description": "Assessing React & Node knowledge",
+    "course": "69dde993f1b8cf2b39d36e0e",
+    "faculty": "69dde37d0e6cc8c52c04b75f",
+    "department": "69da658da2113c8b4be8705d",
+    "questions": [
+      {
+        "type": "mcq",
+        "questionText": "What is the core engine of Node.js?",
+        "options": {
+          "A": "V8",
+          "B": "SpiderMonkey",
+          "C": "Chakra",
+          "D": "Hermes"
+        },
+        "correctAnswer": "A",
+        "answerType": "short",
+        "allowedExtensions": [],
+        "marks": 10,
+        "difficulty": "medium",
+        "topic": "",
+        "_id": "69dde9abfa9e54ef2f88529c",
+        "testCases": []
+      }
+    ],
+    "totalMarks": 100,
+    "duration": 90,
+    "scheduledAt": "2026-04-14T07:15:55.542Z",
+    "allowedStudents": [],
+    "assignedDevices": [],
+    "status": "active",
+    "security": {
+      "disableCopyPaste": true,
+      "detectTabSwitch": true,
+      "requireFullscreen": true,
+      "blockRightClick": true,
+      "detectDevTools": false,
+      "maxViolations": 5
+    },
+    "passingMarks": 0,
+    "isPublished": false,
+    "approvedByHod": false,
+    "createdAt": "2026-04-14T07:15:55.551Z",
+    "updatedAt": "2026-04-14T07:15:55.551Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddf0e76e80e80607def4f6",
+    "title": "ml",
+    "description": "",
+    "course": "69dccf0ba3ea7558adf7b782",
+    "faculty": "69dccf09a3ea7558adf7b77b",
+    "department": "69da658da2113c8b4be8705d",
+    "questions": [
+      {
+        "type": "mcq",
+        "questionText": "dddd",
+        "options": {
+          "A": "dddd",
+          "B": "dddd",
+          "C": "dddd",
+          "D": "dddd"
+        },
+        "correctAnswer": "A",
+        "language": "python",
+        "testCases": [],
+        "answerType": "short",
+        "allowedExtensions": [],
+        "marks": 1,
+        "difficulty": "medium",
+        "topic": "",
+        "_id": "69ddf0e76e80e80607def4f7"
+      }
+    ],
+    "totalMarks": 1,
+    "duration": 60,
+    "scheduledAt": "2026-04-14T07:46:00.000Z",
+    "allowedStudents": [],
+    "assignedDevices": [],
+    "status": "scheduled",
+    "security": {
+      "disableCopyPaste": true,
+      "detectTabSwitch": true,
+      "requireFullscreen": true,
+      "blockRightClick": true,
+      "detectDevTools": false,
+      "maxViolations": 5
+    },
+    "passingMarks": 0,
+    "isPublished": false,
+    "approvedByHod": false,
+    "createdAt": "2026-04-14T07:46:47.252Z",
+    "updatedAt": "2026-04-14T07:46:47.252Z",
+    "__v": 0
+  },
+  {
+    "_id": "69de0ba76e80e80607def5f6",
+    "title": "sample",
+    "description": "",
+    "course": "69dccf0ba3ea7558adf7b782",
+    "faculty": "69dccf09a3ea7558adf7b77b",
+    "department": "69da658da2113c8b4be8705d",
+    "questions": [
+      {
+        "type": "coding",
+        "questionText": "Write a function to reverse a string in JavaScript.",
+        "options": {
+          "A": "",
+          "B": "",
+          "C": "",
+          "D": ""
+        },
+        "language": "python",
+        "testCases": [
+          {
+            "input": "'hello'",
+            "output": "'olleh'",
+            "_id": "69ddf17876afcc23497c0833"
+          }
+        ],
+        "answerType": "short",
+        "allowedExtensions": [],
+        "marks": 1,
+        "difficulty": "medium",
+        "topic": "",
+        "_id": "69de0ba76e80e80607def5f7"
+      }
+    ],
+    "totalMarks": 1,
+    "duration": 60,
+    "scheduledAt": "2026-04-15T09:40:00.000Z",
+    "allowedStudents": [],
+    "assignedDevices": [],
+    "status": "scheduled",
+    "security": {
+      "disableCopyPaste": true,
+      "detectTabSwitch": true,
+      "requireFullscreen": true,
+      "blockRightClick": true,
+      "detectDevTools": false,
+      "maxViolations": 5
+    },
+    "passingMarks": 0,
+    "isPublished": false,
+    "approvedByHod": false,
+    "createdAt": "2026-04-14T09:40:55.960Z",
+    "updatedAt": "2026-04-14T09:40:55.960Z",
+    "__v": 0
+  }
+]

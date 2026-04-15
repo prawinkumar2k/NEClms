@@ -1,0 +1,58 @@
+[
+  {
+    "_id": "69dccf0ba3ea7558adf7b782",
+    "title": "Machine Learning Concepts",
+    "code": "AIDS601",
+    "description": "",
+    "department": "69da658da2113c8b4be8705d",
+    "faculty": "69dccf09a3ea7558adf7b77b",
+    "semester": 6,
+    "credits": 3,
+    "maxStudents": 60,
+    "enrolledStudents": [],
+    "syllabus": "",
+    "isActive": true,
+    "academicYear": "2024-2025",
+    "__v": 0,
+    "createdAt": "2026-04-13T11:10:03.679Z",
+    "updatedAt": "2026-04-13T11:10:03.679Z"
+  },
+  {
+    "_id": "69dccf0ba3ea7558adf7b783",
+    "title": "Deep Learning Foundations",
+    "code": "AIDS602",
+    "description": "",
+    "department": "69da658da2113c8b4be8705d",
+    "faculty": "69dccf09a3ea7558adf7b77c",
+    "semester": 6,
+    "credits": 3,
+    "maxStudents": 60,
+    "enrolledStudents": [],
+    "syllabus": "",
+    "isActive": true,
+    "academicYear": "2024-2025",
+    "__v": 0,
+    "createdAt": "2026-04-13T11:10:03.679Z",
+    "updatedAt": "2026-04-13T11:10:03.679Z"
+  },
+  {
+    "_id": "69dde993f1b8cf2b39d36e0e",
+    "title": "Introduction to Web Development",
+    "code": "CS101",
+    "description": "Fullstack MERN course",
+    "department": "69da658da2113c8b4be8705d",
+    "faculty": "69dde37d0e6cc8c52c04b75f",
+    "semester": 4,
+    "credits": 3,
+    "maxStudents": 60,
+    "enrolledStudents": [
+      "69dde37d0e6cc8c52c04b760"
+    ],
+    "syllabus": "",
+    "isActive": true,
+    "academicYear": "2025-2026",
+    "createdAt": "2026-04-14T07:15:31.760Z",
+    "updatedAt": "2026-04-14T07:15:31.760Z",
+    "__v": 0
+  }
+]

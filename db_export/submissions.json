@@ -1,0 +1,122 @@
+[
+  {
+    "_id": "69ddeb14d2cb405d772b8f18",
+    "exam": "69dde9abfa9e54ef2f88529b",
+    "student": "69dde37d0e6cc8c52c04b760",
+    "device": "69ddebeaac84bf541357c79a",
+    "answers": {
+      "0": "A"
+    },
+    "totalMarks": 0,
+    "marksObtained": 0,
+    "percentage": 10,
+    "grade": "",
+    "passed": false,
+    "violations": [
+      {
+        "type": "tab_switch",
+        "timestamp": "2026-04-14T07:26:15.830Z",
+        "count": 1
+      },
+      {
+        "type": "right_click",
+        "timestamp": "2026-04-14T07:26:15.830Z",
+        "count": 1
+      },
+      {
+        "type": "copy_paste",
+        "timestamp": "2026-04-14T08:24:20.607Z",
+        "count": 1
+      },
+      {
+        "type": "switched_tab",
+        "timestamp": "2026-04-14T08:24:20.607Z",
+        "count": 1
+      },
+      {
+        "type": "switched_tab",
+        "timestamp": "2026-04-14T08:24:20.607Z",
+        "count": 1
+      },
+      {
+        "type": "switched_tab",
+        "timestamp": "2026-04-14T08:38:08.618Z",
+        "count": 1
+      },
+      {
+        "type": "switched_tab",
+        "timestamp": "2026-04-14T08:39:32.691Z",
+        "count": 1
+      },
+      {
+        "type": "switched_tab",
+        "timestamp": "2026-04-14T08:43:42.348Z",
+        "count": 1
+      },
+      {
+        "type": "copy_paste",
+        "timestamp": "2026-04-14T08:52:38.608Z",
+        "count": 1
+      },
+      {
+        "type": "switched_tab",
+        "timestamp": "2026-04-14T08:52:38.608Z",
+        "count": 1
+      },
+      {
+        "type": "switched_tab",
+        "timestamp": "2026-04-14T08:52:38.608Z",
+        "count": 1
+      }
+    ],
+    "totalViolations": 11,
+    "isFlagged": false,
+    "flagReason": "",
+    "status": "submitted",
+    "createdAt": "2026-04-14T07:21:56.481Z",
+    "updatedAt": "2026-04-14T09:02:09.661Z",
+    "__v": 21,
+    "startedAt": "2026-04-14T07:26:15.830Z"
+  },
+  {
+    "_id": "69ddf90d6e80e80607def504",
+    "exam": "69ddf0e76e80e80607def4f6",
+    "student": "69dde37d0e6cc8c52c04b760",
+    "device": null,
+    "totalMarks": 0,
+    "marksObtained": 0,
+    "percentage": 100,
+    "grade": "",
+    "passed": false,
+    "totalViolations": 0,
+    "isFlagged": false,
+    "flagReason": "",
+    "status": "submitted",
+    "violations": [],
+    "createdAt": "2026-04-14T08:21:33.696Z",
+    "updatedAt": "2026-04-14T08:21:43.914Z",
+    "__v": 0,
+    "answers": {
+      "0": "A"
+    }
+  },
+  {
+    "_id": "69de0bb16e80e80607def5fd",
+    "exam": "69de0ba76e80e80607def5f6",
+    "student": "69dde37d0e6cc8c52c04b760",
+    "device": null,
+    "totalMarks": 0,
+    "marksObtained": 0,
+    "percentage": 0,
+    "grade": "",
+    "passed": false,
+    "totalViolations": 0,
+    "isFlagged": false,
+    "flagReason": "",
+    "status": "submitted",
+    "violations": [],
+    "createdAt": "2026-04-14T09:41:05.484Z",
+    "updatedAt": "2026-04-14T09:41:42.077Z",
+    "__v": 0
+  }
+]

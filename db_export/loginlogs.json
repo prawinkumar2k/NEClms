@@ -1,0 +1,145 @@
+[
+  {
+    "_id": "69dded8772aadb505af494a7",
+    "user": "69dde368602d43aeb3ce31b7",
+    "email": "admin@university.edu",
+    "role": "admin",
+    "ipAddress": "192.168.1.50",
+    "device": "69ddebeaac84bf541357c79a",
+    "status": "success",
+    "failReason": "",
+    "timestamp": "2026-04-14T07:17:23.640Z",
+    "__v": 0,
+    "createdAt": "2026-04-14T07:32:23.646Z",
+    "updatedAt": "2026-04-14T07:32:23.646Z"
+  },
+  {
+    "_id": "69dded8772aadb505af494a8",
+    "user": "69dde37d0e6cc8c52c04b760",
+    "email": "student@university.edu",
+    "role": "student",
+    "ipAddress": "192.168.1.101",
+    "device": "69ddebeaac84bf541357c79a",
+    "status": "success",
+    "failReason": "",
+    "timestamp": "2026-04-14T05:32:23.640Z",
+    "__v": 0,
+    "createdAt": "2026-04-14T07:32:23.647Z",
+    "updatedAt": "2026-04-14T07:32:23.647Z"
+  },
+  {
+    "_id": "69dded8772aadb505af494a9",
+    "email": "unknown@attacker.com",
+    "ipAddress": "45.12.33.1",
+    "status": "failed",
+    "failReason": "user_not_found",
+    "timestamp": "2026-04-14T02:32:23.640Z",
+    "__v": 0,
+    "createdAt": "2026-04-14T07:32:23.647Z",
+    "updatedAt": "2026-04-14T07:32:23.647Z"
+  },
+  {
+    "_id": "69ddeea06e80e80607def4f4",
+    "user": "69dccf09a3ea7558adf7b77b",
+    "email": "anita@nec.edu",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "failed",
+    "failReason": "wrong_password",
+    "timestamp": "2026-04-14T07:37:04.435Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddeeaa6e80e80607def4f5",
+    "user": "69dccf09a3ea7558adf7b77b",
+    "email": "anita@nec.edu",
+    "role": "faculty",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "success",
+    "failReason": "",
+    "timestamp": "2026-04-14T07:37:14.687Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddf80c6e80e80607def4fa",
+    "user": "69da658da2113c8b4be87063",
+    "email": "hod@example.com",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "failed",
+    "failReason": "wrong_password",
+    "timestamp": "2026-04-14T08:17:16.243Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddf82b6e80e80607def4fb",
+    "user": "69dde368602d43aeb3ce31b7",
+    "email": "admin@university.edu",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "failed",
+    "failReason": "wrong_password",
+    "timestamp": "2026-04-14T08:17:47.023Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddf8326e80e80607def4fc",
+    "user": "69dde368602d43aeb3ce31b7",
+    "email": "admin@university.edu",
+    "role": "admin",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "success",
+    "failReason": "",
+    "timestamp": "2026-04-14T08:17:54.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddf83b6e80e80607def4fd",
+    "user": "69da658da2113c8b4be87063",
+    "email": "hod@example.com",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "failed",
+    "failReason": "wrong_password",
+    "timestamp": "2026-04-14T08:18:03.685Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddf85a6e80e80607def4fe",
+    "user": "69dde37d0e6cc8c52c04b760",
+    "email": "student@university.edu",
+    "role": "student",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "success",
+    "failReason": "",
+    "timestamp": "2026-04-14T08:18:34.304Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddf8ea6e80e80607def4ff",
+    "user": "69da658da2113c8b4be87063",
+    "email": "hod@example.com",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "failed",
+    "failReason": "wrong_password",
+    "timestamp": "2026-04-14T08:20:58.557Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddf8f06e80e80607def500",
+    "user": "69da658da2113c8b4be87063",
+    "email": "hod@example.com",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "failed",
+    "failReason": "wrong_password",
+    "timestamp": "2026-04-14T08:21:04.428Z",
+    "__v": 0
+  },
+  {
+    "_id": "69ddf9006e80e80607def501",
+    "user": "69dde37c0e6cc8c52c04b75e",
+    "email": "hod@university.edu",
+    "role": "hod",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+    "status": "success",
+    "failReason": "",
+    "timestamp": "2026-04-14T08:21:20.292Z",
+    "__v": 0
+  }
+]

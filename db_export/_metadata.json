@@ -1,0 +1,25 @@
+{
+  "exportedAt": "2026-04-15T07:01:06.963Z",
+  "mongoUri": "mongodb://localhost:27017/edulearn_lms",
+  "dbName": "edulearn_lms",
+  "collections": {
+    "labsessions": 0,
+    "departments": 1,
+    "settings": 1,
+    "attendances": 0,
+    "loginlogs": 13,
+    "questions": 0,
+    "activitylogs": 3,
+    "courses": 3,
+    "exams": 3,
+    "users": 7,
+    "notifications": 10,
+    "violations": 80,
+    "labs": 2,
+    "marks": 0,
+    "studentprofiles": 8,
+    "submissions": 3,
+    "devices": 20,
+    "questionbanks": 3
+  }
+}

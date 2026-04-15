@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "69da658da2113c8b4be8705d",
+    "name": "Artificial Intelligence and Data Science",
+    "code": "AIDS",
+    "description": "Advanced AI, Deep Learning, and Analytics",
+    "isActive": true,
+    "__v": 0,
+    "createdAt": "2026-04-11T15:15:25.093Z",
+    "updatedAt": "2026-04-13T06:55:58.832Z",
+    "hod": "69da658da2113c8b4be87063"
+  }
+]
