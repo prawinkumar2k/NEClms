@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ROUTES } from "@/core/constants/routes";
-import { reportService, deviceService } from "@/core/api/services";
+import { reportService, deviceService, labService } from "@/core/api/services";
 import { useSocket } from "@/contexts/SocketContext";
 import {
   Monitor, BookOpen, BarChart3, Shield,
@@ -99,7 +99,7 @@ export default function AdminDashboard() {
             <Button variant="outline" size="icon" onClick={() => { refetchStats(); refetchDevices(); }} className="rounded-xl h-12 w-12 border-white/10 glass hover:bg-white/10">
               <RefreshCcw className="w-5 h-5" />
             </Button>
-            <Button variant="destructive" className="rounded-xl h-12 px-6 font-black shadow-lg shadow-red-500/20 gap-2 uppercase text-xs italic">
+            <Button variant="destructive" className="rounded-xl h-12 px-6 font-black shadow-lg shadow-red-500/20 gap-2 uppercase text-xs italic" onClick={async () => { try { await labService.sendCommand("lock_all"); toast.success("All labs locked"); } catch (e) { toast.error("Failed to lock labs"); } }}>
               <Lock className="w-5 h-5" /> LOCK LABS
             </Button>
             <Button onClick={() => navigate(ROUTES.ADMIN_USERS_ADD)} className="rounded-xl h-12 px-6 font-black shadow-lg shadow-primary/20 gap-2 uppercase text-xs italic">
@@ -124,7 +124,7 @@ export default function AdminDashboard() {
               <CardHeader className="pb-4 border-b border-white/5">
                 <div className="flex justify-between items-center">
                   <div>
-                    <CardTitle className="text-xl font-black tracking-tight uppercase italic italic">Computer List</CardTitle>
+                    <CardTitle className="text-xl font-black tracking-tight uppercase italic">Computer List</CardTitle>
                     <p className="text-[10px] font-black uppercase tracking-widest text-primary/70">PC State</p>
                   </div>
                   <div className="flex items-center gap-4 text-[10px] font-black uppercase">
@@ -143,7 +143,7 @@ export default function AdminDashboard() {
                <ViolationPanel violations={liveViolations} />
                <Card className="rounded-[32px] glass hover:border-primary/20 transition-colors">
                   <CardHeader>
-                    <CardTitle className="text-lg font-black tracking-tight uppercase italic italic">System OK</CardTitle>
+                    <CardTitle className="text-lg font-black tracking-tight uppercase italic">System OK</CardTitle>
                     <CardDescription className="text-[10px] font-black uppercase tracking-widest text-primary">Check Info</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">

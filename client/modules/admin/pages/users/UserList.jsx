@@ -34,18 +34,18 @@ const itemVariants = {
 const EMPTY = { name: "", email: "", role: "student", department: "", status: "Active" };
 
 import { useQuery } from "@tanstack/react-query";
-import { userService } from "@/core/api/services";
+import { userService, departmentService } from "@/core/api/services";
 import { format } from "date-fns";
 
 export default function UserList() {
   const { data: users, isLoading, refetch } = useQuery({
     queryKey: ["admin-users-list"],
-    queryFn: () => userService.getAll(),
+    queryFn: () => userService.getAll({ limit: 1000 }),
   });
-  
+
   const { data: depts } = useQuery({
     queryKey: ["admin-depts"],
-    queryFn: () => apiClient.get("/api/departments"),
+    queryFn: () => departmentService.getAll(),
   });
 
 
@@ -61,6 +61,7 @@ export default function UserList() {
   const openEdit = (user) => {
     reset();
     Object.entries(user).forEach(([k, v]) => setValue(k, v));
+    setValue("status", user.isActive !== false ? "Active" : "Inactive");
     setEditTarget(user);
     setEditOpen(true);
   };
@@ -68,7 +69,12 @@ export default function UserList() {
   const onSave = handleSubmit(async (vals) => {
     try {
       if (editTarget) {
-        await userService.update(editTarget._id, vals);
+        const payload = {
+          ...vals,
+          isActive: vals.status === "Active",
+        };
+        delete payload.status;
+        await userService.update(editTarget._id, payload);
         toast({ title: "User Saved", description: "The user information has been saved successfully." });
       }
       setEditOpen(false);
@@ -114,9 +120,9 @@ export default function UserList() {
       </Badge>
     )},
     { key: "status", header: "Status", render: (r) => (
-      <span className={`flex items-center gap-2 text-[10px] font-black uppercase tracking-widest ${r.status === "Active" ? "text-emerald-500" : "text-muted-foreground/40"}`}>
-        <div className={`w-1.5 h-1.5 rounded-full ${r.status === "Active" ? "bg-emerald-500 animate-pulse" : "bg-muted-foreground/40"}`} />
-        {r.status === 'Active' ? 'Active' : 'Offline'}
+      <span className={`flex items-center gap-2 text-[10px] font-black uppercase tracking-widest ${r.isActive !== false ? "text-emerald-500" : "text-muted-foreground/40"}`}>
+        <div className={`w-1.5 h-1.5 rounded-full ${r.isActive !== false ? "bg-emerald-500 animate-pulse" : "bg-muted-foreground/40"}`} />
+        {r.isActive !== false ? 'Active' : 'Inactive'}
       </span>
     )},
     { key: "joined", header: "Date Joined", sortable: true, render: (r) => r.createdAt ? format(new Date(r.createdAt), "yyyy-MM-dd") : "N/A" },

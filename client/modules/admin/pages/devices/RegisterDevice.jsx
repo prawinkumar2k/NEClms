@@ -39,7 +39,14 @@ export default function RegisterDevice() {
 
   const onSubmit = handleSubmit(async (vals) => {
     try {
-      await deviceService.register(vals);
+      const payload = {
+        hostname: vals.hostname,
+        ipAddress: vals.ip,
+        macAddress: vals.mac,
+        department: vals.department,
+        location: vals.location,
+      };
+      await deviceService.register(payload);
       toast({ title: "PC added", description: `${vals.hostname} added to lab network.` });
       navigate(ROUTES.ADMIN_DEVICES);
     } catch (err) {

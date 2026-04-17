@@ -43,7 +43,7 @@ export default function Violations() {
       </div>
     )},
     { key: "exam", header: "Test Name", render: (r) => (
-      <span className="text-xs font-bold text-primary italic italic">{r.exam?.title || "Test"}</span>
+      <span className="text-xs font-bold text-primary italic">{r.exam?.title || "Test"}</span>
     )},
     { key: "violation", header: "Broken Rule", render: (r) => {
       const firstV = r.violations?.[0]?.type || "not_allowed";
@@ -127,7 +127,7 @@ export default function Violations() {
                  </div>
                  <div>
                     <CardTitle className="text-2xl font-black italic uppercase">Broken Rules</CardTitle>
-                    <CardDescription className="text-[10px] font-black uppercase tracking-widest text-rose-500/60 font-black">List of all rule breaks</CardDescription>
+                    <CardDescription className="text-[10px] font-black uppercase tracking-widest text-rose-500/60">List of all rule breaks</CardDescription>
                  </div>
               </div>
            </CardHeader>
@@ -188,7 +188,7 @@ export default function Violations() {
                      <div className="space-y-6">
                         <div className="flex flex-col">
                            <span className="text-[9px] font-black tracking-widest text-primary/40 uppercase mb-1">Test Name</span>
-                           <span className="text-sm font-bold text-primary italic italic ml-1">{viewing.exam?.title}</span>
+                           <span className="text-sm font-bold text-primary italic ml-1">{viewing.exam?.title}</span>
                         </div>
                         <div className="flex flex-col">
                            <span className="text-[9px] font-black tracking-widest text-primary/40 uppercase mb-1">State</span>

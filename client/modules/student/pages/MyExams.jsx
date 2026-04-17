@@ -137,7 +137,7 @@ export function Results() {
       <Card className="rounded-[40px] glass border-white/5 relative overflow-hidden shadow-2xl">
         <CardHeader className="flex flex-row items-center justify-between border-b border-white/5 pb-6">
           <div>
-            <CardTitle className="text-2xl font-black italic uppercase italic">My Results</CardTitle>
+            <CardTitle className="text-2xl font-black italic uppercase">My Results</CardTitle>
             <CardDescription className="text-xs font-black uppercase tracking-widest text-primary">Your records: {user?.name}</CardDescription>
           </div>
           <Button variant="outline" size="sm" className="rounded-xl h-10 font-black gap-2 border-white/10 hover:bg-white/5 uppercase text-xs" onClick={() => downloadCSV(results, "results.csv")}>

@@ -412,7 +412,7 @@ export default function ExamInterface() {
       <header className="bg-card border-b border-white/5 px-6 py-4 flex items-center justify-between shrink-0 shadow-lg">
         <div>
           <p className="font-black text-xs uppercase tracking-widest opacity-50">Test ID: {examId}</p>
-          <p className="text-sm font-black italic uppercase italic">Current Test</p>
+          <p className="text-sm font-black italic uppercase">Current Test</p>
         </div>
         <div className={`flex items-center gap-2 font-black italic text-2xl ${timeColor} tracking-tighter`}>
           <Clock className="w-6 h-6" />

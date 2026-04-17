@@ -45,7 +45,7 @@ export default function DeviceList() {
         <p className="font-bold tracking-tight">{r.hostname}</p>
       </div>
     )},
-    { key: "ip", header: "IP", render: (r) => <span className="text-[10px] font-mono text-muted-foreground">{r.ip}</span> },
+    { key: "ipAddress", header: "IP", render: (r) => <span className="text-[10px] font-mono text-muted-foreground">{r.ipAddress}</span> },
     { key: "dept", header: "Dept", sortable: true, render: (r) => r.department?.code || "GENERAL" },
     { key: "status", header: "Status", sortable: true, render: (r) => (
       <span className={`flex items-center gap-2 text-[10px] font-black uppercase tracking-widest ${r.status === "online" ? "text-emerald-500" : r.status === "offline" ? "text-rose-500" : "text-primary"}`}>
@@ -121,7 +121,7 @@ export default function DeviceList() {
                 columns={cols} 
                 data={devices || []} 
                 isLoading={isLoading}
-                searchKeys={["hostname", "ip", "status"]} 
+                searchKeys={["hostname", "ipAddress", "status"]}
                 searchPlaceholder="Search PCs..." 
                 pageSize={10} 
               />

@@ -95,7 +95,9 @@ export const handleGetStudentStats = async (req, res) => {
         status: { $in: ["scheduled", "active"] },
         // isPublished: { $ne: false } // Commented out to ensure visibility if field missing
       }).populate("course", "title code").lean(),
-      Submission.find({ student: studentId, status: "submitted" }).lean(),
+      Submission.find({ student: studentId, status: "submitted" })
+        .populate("exam", "course totalMarks")
+        .lean(),
       User.findById(studentId).lean()
 
     ]);
@@ -125,11 +127,22 @@ export const handleGetStudentStats = async (req, res) => {
 
 function finalCourseMap(courses, submissions) {
     return courses.map(c => {
-        const sub = submissions.find(s => s.exam?.course?.toString() === c._id.toString());
+        const courseId = c._id.toString();
+        const sub = submissions.find(s => {
+          const examCourse = s.exam?.course;
+          return examCourse && examCourse.toString() === courseId;
+        });
+        const pct = sub?.percentage || 0;
+        let grade = "P";
+        if (pct >= 90) grade = "A+";
+        else if (pct >= 80) grade = "A";
+        else if (pct >= 70) grade = "B";
+        else if (pct >= 60) grade = "C";
+        else if (pct > 0) grade = "F";
         return {
           name: c.title,
-          progress: sub ? 100 : 0,
-          grade: sub ? (sub.percentage >= 90 ? "A+" : "B") : "P"
+          progress: sub ? Math.round(pct) : 0,
+          grade: sub ? grade : "P"
         };
     });
 }
@@ -182,7 +195,7 @@ export const handleGetFacultyMonitoring = async (req, res) => {
     const submissions = await Submission.find({ exam: { $in: examIds } })
       .select('student exam answers totalViolations status updatedAt')
       .populate('student', 'name email rollNumber')
-      .populate('exam', 'title duration')
+      .populate('exam', 'title duration questions')
       .lean();
 
     const stats = {

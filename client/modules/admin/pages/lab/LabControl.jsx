@@ -268,7 +268,7 @@ export default function LabControl() {
                     className="fixed top-0 right-0 h-full w-full max-w-sm glass border-l border-white/5 z-[100] shadow-2xl p-8 flex flex-col"
                  >
                     <div className="flex justify-between items-center mb-10">
-                       <h3 className="text-xl font-black italic uppercase italic">PC Info</h3>
+                       <h3 className="text-xl font-black italic uppercase">PC Info</h3>
                        <button onClick={() => setDetailDevice(null)} className="w-8 h-8 rounded-full hover:bg-white/5 flex items-center justify-center">
                           <RefreshCw className="w-4 h-4 text-muted-foreground" />
                        </button>
@@ -287,8 +287,8 @@ export default function LabControl() {
 
                     <div className="grid grid-cols-2 gap-4">
                        {[
-                          { label: "IP ADDRESS", value: detailDevice.ip },
-                          { label: "PC ID (MAC)", value: detailDevice.mac || "N/A" },
+                          { label: "IP ADDRESS", value: detailDevice.ipAddress },
+                          { label: "PC ID (MAC)", value: detailDevice.macAddress || "N/A" },
                           { label: "WINDOWS", value: detailDevice.os || "W11 Enterprise" },
                           { label: "LAST SEEN", value: detailDevice.lastSeen ? timeAgo(detailDevice.lastSeen) : "Never" },
                        ].map((stat, i) => (

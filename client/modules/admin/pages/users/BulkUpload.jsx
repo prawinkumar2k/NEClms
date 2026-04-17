@@ -6,6 +6,7 @@ import { Alert } from "@/shared/components/Alerts/Alert";
 import { useToast } from "@/hooks/use-toast";
 import { ROUTES } from "@/core/constants/routes";
 import { Upload, FileSpreadsheet, CheckCircle2, AlertTriangle, Download } from "lucide-react";
+import { userService } from "@/core/api/services";
 
 import { getAdminNav } from "@/core/constants/navigation";
 
@@ -23,16 +24,6 @@ export default function BulkUpload() {
   const [uploading, setUploading] = useState(false);
   const [result, setResult] = useState(null);
   const { toast } = useToast();
-  const userService = {
-    bulkUpload: async (users) => {
-      const res = await fetch("/api/users/bulk", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ users })
-      });
-      return res.json();
-    }
-  };
 
   const handleFile = (e) => {
     const f = e.target.files[0];

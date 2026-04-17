@@ -4,7 +4,7 @@ import User from "../models/User.js";
 export const handleGetUsers = async (req, res) => {
   console.log("DEBUG: handleGetUsers hit, DB state:", mongoose.connection.readyState);
   try {
-    const { role, department, search, limit = 10 } = req.query;
+    const { role, department, search, limit = 1000 } = req.query;
     
     let query = {};
     if (role) query.role = role;

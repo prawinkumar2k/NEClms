@@ -132,7 +132,7 @@ export default function LiveMonitoring() {
                   <Monitor className="w-7 h-7 text-primary" />
                 </div>
                 <div>
-                  <CardTitle className="text-2xl font-black italic uppercase italic">Students Online</CardTitle>
+                  <CardTitle className="text-2xl font-black italic uppercase">Students Online</CardTitle>
                   <CardDescription className="text-[10px] font-black uppercase tracking-widest text-primary/60">Current activity of students</CardDescription>
                 </div>
               </div>
@@ -199,13 +199,13 @@ export default function LiveMonitoring() {
                                  <Monitor className="w-4 h-4 text-emerald-500" />
                                  <p className="text-sm font-bold">{viewing.device?.hostname || "REMOTE"}</p>
                               </div>
-                              <p className="text-[9px] font-mono text-muted-foreground/60 ml-6 uppercase">{viewing.device?.ip || "::1"}</p>
+                              <p className="text-[9px] font-mono text-muted-foreground/60 ml-6 uppercase">{viewing.device?.ipAddress || "::1"}</p>
                            </div>
                         </div>
                         <div className="space-y-6">
                            <div className="space-y-1">
                               <p className="text-[9px] font-black text-primary/40 uppercase tracking-widest">Test Name</p>
-                              <p className="text-sm font-bold text-primary italic italic">{viewing.exam?.title}</p>
+                              <p className="text-sm font-bold text-primary italic">{viewing.exam?.title}</p>
                            </div>
                            <div className="space-y-1">
                               <p className="text-[9px] font-black text-primary/40 uppercase tracking-widest">Status</p>
@@ -230,7 +230,7 @@ export default function LiveMonitoring() {
 
                      {viewing.violations?.length > 0 && (
                         <div className="space-y-4">
-                           <p className="text-[10px] font-black uppercase tracking-widest text-rose-500 bg-rose-500/5 px-4 py-2 rounded-xl inline-block border border-rose-500/10 flex items-center gap-2">Rule Break History</p>
+                           <p className="text-[10px] font-black uppercase tracking-widest text-rose-500 bg-rose-500/5 px-4 py-2 rounded-xl flex items-center gap-2 border border-rose-500/10">Rule Break History</p>
                            <div className="space-y-2">
                               {viewing.violations.map((v, i) => (
                                  <div key={i} className="flex items-center justify-between p-4 rounded-2xl bg-rose-500/5 border border-rose-500/10">

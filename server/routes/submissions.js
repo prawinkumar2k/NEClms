@@ -14,7 +14,7 @@ export const handleGetSubmissions = async (req, res) => {
     const submissions = await Submission.find(query)
       .populate("student", "name rollNumber")
       .populate("exam", "title")
-      .populate("device", "hostname ip")
+      .populate("device", "hostname ipAddress")
       .sort({ updatedAt: -1 });
 
     res.json(submissions);
@@ -74,7 +74,7 @@ export const handleStartExam = async (req, res) => {
         student: studentId,
         exam: examId,
         status: "in_progress",
-        startTime: new Date(),
+        startedAt: new Date(),
         device: req.body.deviceId || null,
         ipAddress: req.ip
       });
@@ -154,11 +154,11 @@ export const handleSubmitExam = async (req, res) => {
     }
     
     submission.status = "submitted";
-    submission.endTime = new Date();
-    
+    submission.submittedAt = new Date();
+
     // Auto-grading for MCQ
     let score = 0;
-    const examQuestions = submission.exam.questions;
+    const examQuestions = submission.exam.questions || [];
     Object.keys(submission.answers || {}).forEach((idxStr) => {
       const idx = parseInt(idxStr);
       const ans = submission.answers[idxStr];
@@ -168,15 +168,26 @@ export const handleSubmitExam = async (req, res) => {
       }
     });
 
-    submission.score = score;
-    submission.percentage = (score / submission.exam.totalMarks) * 100;
-    
+    const totalMarks = submission.exam.totalMarks || 0;
+    const percentage = totalMarks > 0 ? Math.round((score / totalMarks) * 1000) / 10 : 0;
+
+    submission.marksObtained = score;
+    submission.totalMarks = totalMarks;
+    submission.percentage = percentage;
+    submission.passed = percentage >= (submission.exam.passingMarks || 40);
+
+    if (percentage >= 90) submission.grade = "A+";
+    else if (percentage >= 80) submission.grade = "A";
+    else if (percentage >= 70) submission.grade = "B";
+    else if (percentage >= 60) submission.grade = "C";
+    else submission.grade = "F";
+
     await submission.save();
 
     const io = req.app.get("io");
     if (io) io.emit("new-activity", { type: "submission", student: req.user.name });
 
-    res.json({ success: true, score, percentage: submission.percentage });
+    res.json({ success: true, score, percentage, grade: submission.grade });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

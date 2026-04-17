@@ -129,7 +129,7 @@ export default function HODDashboard() {
 
         {hasSystemError && (
           <div className="p-6 rounded-[32px] bg-red-500/10 border border-red-500/20 text-red-500">
-            <p className="font-bold flex items-center gap-2 italic tracking-tight uppercase tracking-widest text-xs">
+            <p className="font-bold flex items-center gap-2 italic uppercase tracking-widest text-xs">
               <AlertTriangle className="w-4 h-4" /> Connection Error: {statsError?.message || examsError?.message || facultyError?.message || "Cannot reach server"}.
             </p>
           </div>
